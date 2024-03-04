@@ -5,30 +5,45 @@
     {% bootstrap_css %}
     {% bootstrap_javascript %}
     <title>{% block title %}Navel Orangeworm Areawide IPM Program{% endblock %}</title>
+    <style>
+        .navbar-light {
+            background-color: #1c2c53 !important;
+        }
+        .navbar-light .navbar-nav .nav-link {
+            color: #ffffff !important;
+        }
+        .navbar-light .navbar-brand {
+            color: #ffffff !important;
+        }
+    </style>
 </head>
 
 <body>
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-     <span class="navbar-brand mb-0 h1">NOW Areawide IPM Program</span>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="/NavelOrangeWorm">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="/NavelOrangeWorm/overview">Program Overview</a></li>
-            <li class="nav-item"><a class="nav-link" href="/NavelOrangeWorm/resources">Resources</a></li>
-            <li class="nav-item"><a class="nav-link" href="/NavelOrangeWorm/phenology">Regional Monitoring/Phenology</a></li>
-            <li class="nav-item"><a class="nav-link" href="/NavelOrangeWorm/events">Events</a></li>
-            <li class="nav-item"><a class="nav-link" href="/NavelOrangeWorm/contact">About Us/Contact</a></li>
-        </ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">NOW Areawide IPM Program</span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="/NavelOrangeWorm">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/NavelOrangeWorm/overview">Program Overview</a></li>
+                <li class="nav-item"><a class="nav-link" href="/NavelOrangeWorm/resources">Resources</a></li>
+                <li class="nav-item"><a class="nav-link" href="/NavelOrangeWorm/phenology">Regional
+                    Monitoring/Phenology</a></li>
+                <li class="nav-item"><a class="nav-link" href="/NavelOrangeWorm/events">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="/NavelOrangeWorm/contact">About Us/Contact</a></li>
+            </ul>
+        </div>
     </div>
-    </div>
-       </nav>
+</nav>
 
-    <div id="content">
+<div class="container-fluid">
+    <div id="content" class="row">
         {% block content %}{% endblock %}
     </div>
+</div>
 </body>
 </html>
